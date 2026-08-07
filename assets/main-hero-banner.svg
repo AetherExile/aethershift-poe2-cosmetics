@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <!-- Background Gradient (Dark Metallic PoE Theme) -->
+    <linearGradient id="poeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0c"/>
+      <stop offset="50%" stop-color="#141419"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </linearGradient>
+
+    <!-- Gold Accent Gradient with Animation -->
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F39C12"/>
+      <stop offset="50%" stop-color="#F1C40F"/>
+      <stop offset="100%" stop-color="#E67E22"/>
+    </linearGradient>
+
+    <!-- Discord CTA Button Gradient -->
+    <linearGradient id="discordBtn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5865F2">
+        <animate attributeName="stop-color" values="#5865F2;#7289DA;#5865F2" dur="3s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#404EED">
+        <animate attributeName="stop-color" values="#404EED;#57F287;#404EED" dur="3s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="btnGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur">
+        <animate attributeName="stdDeviation" values="6;14;6" dur="2s" repeatCount="indefinite"/>
+      </feGaussianBlur>
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" rx="16" fill="url(#poeBg)" stroke="#2a2a35" stroke-width="2"/>
+  
+  <!-- Subtle Grid Overlay -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="1" opacity="0.03"/>
+  </pattern>
+  <rect width="1200" height="400" fill="url(#grid)"/>
+
+  <!-- Left Accent Animated Glow -->
+  <circle cx="200" cy="200" r="180" fill="#5865F2" opacity="0.08" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.06;0.18;0.06" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Right Accent Animated Glow -->
+  <circle cx="1000" cy="200" r="180" fill="#F1C40F" opacity="0.08" filter="url(#glow)">
+    <animate attributeName="opacity" values="0.08;0.22;0.08" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Official Discord Clyde Logo Box -->
+  <g transform="translate(60, 110)">
+    <rect width="180" height="180" rx="36" fill="#18191c" stroke="#5865F2" stroke-width="3">
+      <animate attributeName="stroke" values="#5865F2;#57F287;#5865F2" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <g transform="translate(20, 20)">
+      <path fill="#5865F2" d="M117.84 32C108.57 27.7 98.72 24.55 88.36 22.75C87.05 25.1 85.56 28.28 84.51 30.77C73.57 29.13 62.69 29.13 51.96 30.77C50.91 28.28 49.38 25.1 48.07 22.75C37.71 24.55 27.86 27.73 18.59 32.04C-0.11 60.03 -5.18 87.33 2.34 114.23C14.73 123.41 26.73 129 38.53 132.67C41.44 128.69 44.03 124.48 46.24 120.02C41.95 118.4 37.87 116.33 33.99 113.88C35.01 113.13 36.00 112.34 36.96 111.55C59.98 122.2 85.04 122.2 107.72 111.55C108.71 112.34 109.70 113.13 110.73 113.88C106.84 116.36 102.76 118.44 98.48 120.06C100.69 124.51 103.27 128.73 106.18 132.71C117.98 129.04 129.98 123.45 142.37 114.23C151.03 74.46 128.16 47.46 117.84 32Z">
+        <animate attributeName="fill" values="#5865F2;#7289DA;#5865F2" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <!-- Perfectly Symmetrical Eyes -->
+      <ellipse cx="48.5" cy="81.5" rx="12" ry="14.5" fill="#18191c"/>
+      <ellipse cx="98.5" cy="81.5" rx="12" ry="14.5" fill="#18191c"/>
+    </g>
+  </g>
+
+  <!-- Tag Pill -->
+  <rect x="280" y="60" width="310" height="32" rx="16" fill="#F1C40F" fill-opacity="0.15" stroke="#F1C40F" stroke-opacity="0.4"/>
+  <text x="435" y="81" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#F1C40F" text-anchor="middle" letter-spacing="1.5">PATH OF EXILE 2 COSMETIC TOOL</text>
+
+  <!-- Main Headline -->
+  <text x="280" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="900" fill="#ffffff" letter-spacing="0.5">AETHERSHIFT MTX SWAPPER</text>
+
+  <!-- Subheadline -->
+  <text x="280" y="188" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" fill="url(#goldText)">
+    Live Character Skins • Multi-Tier MTX Variants • Weapon Effects • Portals
+  </text>
+
+  <text x="280" y="225" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#a0a0b0">
+    Join Discord for 2-Hour Trial Updates, Product News &amp; Support
+  </text>
+
+  <!-- Pulsing Animated CTA Button -->
+  <g transform="translate(280, 260)">
+    <rect width="450" height="64" rx="14" fill="url(#discordBtn)" filter="url(#btnGlow)"/>
+    <text x="225" y="39" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">JOIN OFFICIAL DISCORD COMMUNITY ➔</text>
+  </g>
+</svg>
