@@ -1,0 +1,17 @@
+{
+  "applicationCategoryType": 0,
+  "attribute": 536870913,
+  "attribute2": 0,
+  "attribute3": 4,
+  "titleId": "RTPN00001",
+  "contentId": "IV9999-RTPN00001_00-RETROPAPA0000000",
+  "localizedParameters": {
+    "defaultLanguage": "es-ES",
+    "es-ES": {
+      "titleName": "Retro Papa"
+    },
+    "en-US": {
+      "titleName": "Retro Papa"
+    }
+  }
+}
